@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary */
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #4361ee;
+  --color-primary-600: #3946d3;
+  --color-primary-700: #3046c5;
+  --color-primary-800: #2c3aa0;
+  --color-primary-900: #29338a;
+  --color-primary-950: #1a1f5c;
+
+  /* Secondary */
+  --color-secondary-50: #f0f0ff;
+  --color-secondary-100: #e4e3ff;
+  --color-secondary-200: #cdcaff;
+  --color-secondary-300: #aba4ff;
+  --color-secondary-400: #8b7dff;
+  --color-secondary-500: #3f37c9;
+  --color-secondary-600: #352db0;
+  --color-secondary-700: #2c2496;
+  --color-secondary-800: #251e7e;
+  --color-secondary-900: #1f1a6a;
+  --color-secondary-950: #110e3d;
+
+  /* Accent */
+  --color-accent-50: #eff6ff;
+  --color-accent-100: #dbeafe;
+  --color-accent-200: #bfdbfe;
+  --color-accent-300: #93c5fd;
+  --color-accent-400: #60a5fa;
+  --color-accent-500: #4895ef;
+  --color-accent-600: #3b82f6;
+  --color-accent-700: #2563eb;
+  --color-accent-800: #1d4ed8;
+  --color-accent-900: #1e3a8a;
+  --color-accent-950: #172554;
+
+  /* Background */
+  --color-background-50: #f8f9fa;
+  --color-background-100: #f1f3f5;
+  --color-background-200: #e9ecef;
+  --color-background-300: #dee2e6;
+  --color-background-400: #ced4da;
+  --color-background-500: #adb5bd;
+  --color-background-600: #868e96;
+  --color-background-700: #495057;
+  --color-background-800: #343a40;
+  --color-background-900: #212529;
+  --color-background-950: #0d1117;
+
+  /* Foreground */
+  --color-foreground-50: #f8f9fa;
+  --color-foreground-100: #f1f3f5;
+  --color-foreground-200: #e0e3e7;
+  --color-foreground-300: #c0c6ce;
+  --color-foreground-400: #8b949e;
+  --color-foreground-500: #6c757d;
+  --color-foreground-600: #495057;
+  --color-foreground-700: #343a40;
+  --color-foreground-800: #212529;
+  --color-foreground-900: #1a1a2e;
+  --color-foreground-950: #0d0d1a;
+
+  /* Font family */
+  --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ─── Dark Mode Overrides ─── */
+.dark {
+  --color-background-50: #161b22;
+  --color-background-100: #1c2128;
+  --color-background-200: #21262d;
+  --color-background-300: #30363d;
+  --color-background-700: #c9d1d9;
+  --color-background-800: #e2e8f0;
+  --color-background-900: #f0f6fc;
+
+  --color-foreground-50: #f0f6fc;
+  --color-foreground-100: #e2e8f0;
+  --color-foreground-200: #c9d1d9;
+  --color-foreground-300: #b1bac4;
+  --color-foreground-400: #8b949e;
+  --color-foreground-500: #6e7681;
+  --color-foreground-600: #484f58;
+  --color-foreground-700: #30363d;
+  --color-foreground-800: #21262d;
+  --color-foreground-900: #e2e8f0;
+  --color-foreground-950: #f0f6fc;
+}
+
+/* ─── Global styles ─── */
+html {
+  direction: rtl;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-background-400);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-background-500);
+}
